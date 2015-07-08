@@ -7887,7 +7887,8 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 
 Use formula: I_led = V_thd / R_set
    V_thd = 0.1
-</text>
+
+6V &lt; VIN &lt; 36V</text>
 <text x="238.506" y="6.604" size="3.81" layer="91">11</text>
 <text x="153.924" y="6.35" size="3.81" layer="91">Ethan Zonca/Mike Hord</text>
 </plain>

@@ -217,6 +217,9 @@
 <dimension x1="28.575" y1="2.54" x2="33.02" y2="7.62" x3="34.29" y3="7.62" textsize="1.778" textratio="15" layer="47" dtype="leader" unit="inch" precision="3"/>
 <text x="34.544" y="6.731" size="1.778" layer="47" font="vector" ratio="15">#4-40 typ.</text>
 <text x="2.54" y="-19.05" size="1.778" layer="47" font="vector" ratio="15">Units are inches</text>
+<text x="1.778" y="21.971" size="0.8128" layer="21" font="vector" ratio="15" rot="R90" align="bottom-center">SJ1</text>
+<text x="10.414" y="21.971" size="0.8128" layer="21" font="vector" ratio="15" rot="R90" align="bottom-center">SJ2</text>
+<text x="19.05" y="21.971" size="0.8128" layer="21" font="vector" ratio="15" rot="R90" align="bottom-center">SJ3</text>
 </plain>
 <libraries>
 <library name="SparkFun">
@@ -1033,9 +1036,9 @@ design rules under a new name.</description>
 <param name="rlMaxPadInner" value="20mil"/>
 <param name="rlMinPadBottom" value="12mil"/>
 <param name="rlMaxPadBottom" value="20mil"/>
-<param name="rlMinViaOuter" value="7mil"/>
+<param name="rlMinViaOuter" value="10mil"/>
 <param name="rlMaxViaOuter" value="20mil"/>
-<param name="rlMinViaInner" value="7mil"/>
+<param name="rlMinViaInner" value="10mil"/>
 <param name="rlMaxViaInner" value="20mil"/>
 <param name="rlMinMicroViaOuter" value="4mil"/>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
@@ -1220,10 +1223,10 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="NDUC-11627" x="22.225" y="10.668" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" value="33uH" x="22.225" y="10.668" size="1.778" layer="27" display="off"/>
 </element>
-<element name="JP2" library="SparkFun" package="SCREWTERMINAL-3.5MM-2_LOCK" value="" x="5.87375" y="27.305" rot="R180"/>
-<element name="CH2" library="SparkFun" package="SCREWTERMINAL-3.5MM-2_LOCK" value="" x="11.049" y="2.54"/>
-<element name="CH1" library="SparkFun" package="SCREWTERMINAL-3.5MM-2_LOCK" value="" x="2.413" y="2.54"/>
-<element name="CH3" library="SparkFun" package="SCREWTERMINAL-3.5MM-2_LOCK" value="" x="19.685" y="2.54"/>
+<element name="JP6" library="SparkFun" package="SCREWTERMINAL-3.5MM-2_LOCK" value="" x="5.87375" y="27.305" rot="R180"/>
+<element name="JP2" library="SparkFun" package="SCREWTERMINAL-3.5MM-2_LOCK" value="" x="11.049" y="2.54"/>
+<element name="JP1" library="SparkFun" package="SCREWTERMINAL-3.5MM-2_LOCK" value="" x="2.413" y="2.54"/>
+<element name="JP3" library="SparkFun" package="SCREWTERMINAL-3.5MM-2_LOCK" value="" x="19.685" y="2.54"/>
 <element name="C5" library="SparkFun-Capacitors" package="0805-CAP" value="1.0uF" x="24.892" y="16.3195" rot="R270">
 <attribute name="PROD_ID" value="CAP-11625" x="24.892" y="16.3195" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" value="1.0uF" x="24.892" y="16.3195" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1243,8 +1246,8 @@ design rules under a new name.</description>
 <element name="LOGO1" library="SparkFun-Aesthetics" package="OSHW-LOGO-S" value="OSHW-LOGOS" x="10.16" y="27.305" rot="MR0"/>
 <element name="LOGO2" library="SparkFun-Aesthetics" package="SFE-NEW-WEBLOGO" value="LOGO-SFENEW" x="23.241" y="3.429" rot="MR0"/>
 <element name="FRAME1" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="FRAME-LETTER" x="11.43" y="-31.75"/>
-<element name="JP3" library="SparkFun-Connectors" package="1X02_2.54_SCREWTERM" value="M022.54MM_SCREWTERM" x="20.955" y="26.67"/>
-<element name="JP4" library="SparkFun-Connectors" package="1X02_2.54_SCREWTERM" value="M022.54MM_SCREWTERM" x="13.335" y="26.67"/>
+<element name="JP4" library="SparkFun-Connectors" package="1X02_2.54_SCREWTERM" value="M022.54MM_SCREWTERM" x="20.955" y="26.67"/>
+<element name="JP5" library="SparkFun-Connectors" package="1X02_2.54_SCREWTERM" value="M022.54MM_SCREWTERM" x="13.335" y="26.67"/>
 <element name="FID1" library="SparkFun-Aesthetics" package="MICRO-FIDUCIAL" value="FIDUCIALUFIDUCIAL" x="4.318" y="1.016"/>
 <element name="FID2" library="SparkFun-Aesthetics" package="MICRO-FIDUCIAL" value="FIDUCIALUFIDUCIAL" x="24.003" y="28.448"/>
 <element name="SJ1" library="SparkFun-Passives" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="2.794" y="21.59"/>
@@ -1270,14 +1273,14 @@ design rules under a new name.</description>
 <contactref element="C2" pad="2"/>
 <contactref element="U3" pad="2"/>
 <contactref element="C6" pad="2"/>
-<contactref element="JP2" pad="1"/>
+<contactref element="JP6" pad="1"/>
 <polygon width="0.254" layer="16" isolate="0.3048">
 <vertex x="0.0254" y="29.8196"/>
 <vertex x="26.035" y="29.845"/>
 <vertex x="26.035" y="0"/>
 <vertex x="0" y="0"/>
 </polygon>
-<contactref element="JP4" pad="P2"/>
+<contactref element="JP5" pad="P2"/>
 <wire x1="7.62" y1="20.055" x2="7.62" y2="18.542" width="0.8128" layer="1"/>
 <via x="7.62" y="18.542" extent="1-16" drill="0.381"/>
 <wire x1="4.953" y1="15.8449" x2="4.953" y2="14.478" width="0.508" layer="1"/>
@@ -1306,8 +1309,8 @@ design rules under a new name.</description>
 <contactref element="C2" pad="1"/>
 <contactref element="U3" pad="5"/>
 <contactref element="C6" pad="1"/>
-<contactref element="JP2" pad="2"/>
-<polygon width="0.254" layer="1" isolate="0.2032" rank="2">
+<contactref element="JP6" pad="2"/>
+<polygon width="0.254" layer="1" isolate="0.254" rank="2">
 <vertex x="0.635" y="28.8925"/>
 <vertex x="3.81" y="28.8925"/>
 <vertex x="3.81" y="25.4"/>
@@ -1328,7 +1331,7 @@ design rules under a new name.</description>
 <signal name="N$9" class="1">
 <contactref element="C3" pad="2"/>
 <contactref element="L2" pad="2"/>
-<contactref element="CH2" pad="2"/>
+<contactref element="JP2" pad="2"/>
 <polygon width="0.254" layer="1" isolate="0.2032" rank="3">
 <vertex x="15.621" y="17.145"/>
 <vertex x="15.621" y="9.398"/>
@@ -1340,7 +1343,7 @@ design rules under a new name.</description>
 <wire x1="14.7268" y1="2.54" x2="14.7268" y2="4.4398" width="1.27" layer="1"/>
 </signal>
 <signal name="N$13">
-<contactref element="CH2" pad="1"/>
+<contactref element="JP2" pad="1"/>
 <contactref element="R2" pad="2"/>
 <contactref element="R5" pad="1"/>
 <contactref element="U2" pad="4"/>
@@ -1378,7 +1381,7 @@ design rules under a new name.</description>
 <signal name="N$5" class="1">
 <contactref element="C1" pad="2"/>
 <contactref element="L1" pad="2"/>
-<contactref element="CH1" pad="2"/>
+<contactref element="JP1" pad="2"/>
 <polygon width="0.254" layer="1" isolate="0.2032" rank="3">
 <vertex x="6.985" y="17.145"/>
 <vertex x="6.985" y="9.398"/>
@@ -1390,7 +1393,7 @@ design rules under a new name.</description>
 <wire x1="7.078" y1="10.493" x2="7.078" y2="5.554" width="1.27" layer="1"/>
 </signal>
 <signal name="N$11">
-<contactref element="CH1" pad="1"/>
+<contactref element="JP1" pad="1"/>
 <contactref element="R4" pad="1"/>
 <contactref element="R1" pad="2"/>
 <contactref element="U1" pad="4"/>
@@ -1427,7 +1430,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$16" class="1">
 <contactref element="L3" pad="2"/>
-<contactref element="CH3" pad="2"/>
+<contactref element="JP3" pad="2"/>
 <contactref element="C5" pad="2"/>
 <polygon width="0.254" layer="1" isolate="0.2032" rank="3">
 <vertex x="24.003" y="17.145"/>
@@ -1452,7 +1455,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="CTRL_CH1">
 <contactref element="U1" pad="3"/>
-<contactref element="JP4" pad="P1"/>
+<contactref element="JP5" pad="P1"/>
 <wire x1="5.903" y1="15.8449" x2="5.903" y2="14.544" width="0.2032" layer="1"/>
 <wire x1="5.903" y1="14.544" x2="6.096" y2="14.351" width="0.2032" layer="1"/>
 <via x="6.096" y="14.351" extent="1-16" drill="0.254"/>
@@ -1472,7 +1475,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="CTRL_CH2">
 <contactref element="U2" pad="3"/>
-<contactref element="JP3" pad="P2"/>
+<contactref element="JP4" pad="P2"/>
 <wire x1="14.539" y1="15.8449" x2="14.539" y2="14.544" width="0.2032" layer="1"/>
 <wire x1="14.539" y1="14.544" x2="14.732" y2="14.351" width="0.2032" layer="1"/>
 <via x="14.732" y="14.351" extent="1-16" drill="0.254"/>
@@ -1492,7 +1495,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="CTRL_CH3">
 <contactref element="U3" pad="3"/>
-<contactref element="JP3" pad="P1"/>
+<contactref element="JP4" pad="P1"/>
 <wire x1="23.175" y1="15.8449" x2="23.175" y2="14.671" width="0.2032" layer="1"/>
 <wire x1="23.175" y1="14.671" x2="23.495" y2="14.351" width="0.2032" layer="1"/>
 <via x="23.495" y="14.351" extent="1-16" drill="0.254"/>
@@ -1530,7 +1533,7 @@ design rules under a new name.</description>
 <contactref element="U3" pad="4"/>
 <contactref element="C5" pad="1"/>
 <contactref element="R6" pad="1"/>
-<contactref element="CH3" pad="1"/>
+<contactref element="JP3" pad="1"/>
 <contactref element="R3" pad="2"/>
 <polygon width="0.2032" layer="1" isolate="0.2032">
 <vertex x="22.352" y="16.9545"/>

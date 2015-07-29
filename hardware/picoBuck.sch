@@ -7855,10 +7855,10 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <part name="L1" library="SparkFun-Passives" deviceset="INDUCTOR" device="BOURNS_SRN6045" value="33uH"/>
 <part name="L2" library="SparkFun-Passives" deviceset="INDUCTOR" device="BOURNS_SRN6045" value="33uH"/>
 <part name="L3" library="SparkFun-Passives" deviceset="INDUCTOR" device="BOURNS_SRN6045" value="33uH"/>
+<part name="JP6" library="SparkFun" deviceset="M02" device="3.5MM_LOCK"/>
 <part name="JP2" library="SparkFun" deviceset="M02" device="3.5MM_LOCK"/>
-<part name="CH2" library="SparkFun" deviceset="M02" device="3.5MM_LOCK"/>
-<part name="CH1" library="SparkFun" deviceset="M02" device="3.5MM_LOCK"/>
-<part name="CH3" library="SparkFun" deviceset="M02" device="3.5MM_LOCK"/>
+<part name="JP1" library="SparkFun" deviceset="M02" device="3.5MM_LOCK"/>
+<part name="JP3" library="SparkFun" deviceset="M02" device="3.5MM_LOCK"/>
 <part name="C5" library="SparkFun-Capacitors" deviceset="1.0UF-25V-+80/-20(0805)" device="&quot;" value="1.0uF"/>
 <part name="D1" library="SparkFun-DiscreteSemi" deviceset="DIODE-SCHOTTKY" device="-MBRA140" value="MBRA140"/>
 <part name="D2" library="SparkFun-DiscreteSemi" deviceset="DIODE-SCHOTTKY" device="-MBRA140" value="MBRA140"/>
@@ -7866,8 +7866,8 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <part name="LOGO1" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="S"/>
 <part name="LOGO2" library="SparkFun-Aesthetics" deviceset="LOGO-SFE" device="NEW"/>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device=""/>
-<part name="JP3" library="SparkFun-Connectors" deviceset="M02" device="2.54MM_SCREWTERM" value="M022.54MM_SCREWTERM"/>
 <part name="JP4" library="SparkFun-Connectors" deviceset="M02" device="2.54MM_SCREWTERM" value="M022.54MM_SCREWTERM"/>
+<part name="JP5" library="SparkFun-Connectors" deviceset="M02" device="2.54MM_SCREWTERM" value="M022.54MM_SCREWTERM"/>
 <part name="FID1" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
 <part name="FID2" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
 <part name="SJ1" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NO" device=""/>
@@ -7891,6 +7891,8 @@ Use formula: I_led = V_thd / R_set
 6V &lt; VIN &lt; 36V</text>
 <text x="238.506" y="6.604" size="3.81" layer="91">11</text>
 <text x="153.924" y="6.35" size="3.81" layer="91">Ethan Zonca/Mike Hord</text>
+<text x="53.34" y="162.56" size="1.778" layer="97">Close SJ1, SJ2, SJ3 to increase
+driver current to 670mA.</text>
 </plain>
 <instances>
 <instance part="U2" gate="G$1" x="109.22" y="139.7"/>
@@ -7922,10 +7924,10 @@ Use formula: I_led = V_thd / R_set
 <attribute name="NAME" x="205.74" y="119.38" size="1.778" layer="95"/>
 <attribute name="VALUE" x="205.74" y="121.92" size="1.778" layer="96"/>
 </instance>
-<instance part="JP2" gate="G$1" x="111.76" y="55.88" rot="R180"/>
-<instance part="CH2" gate="G$1" x="142.24" y="137.16" rot="R180"/>
-<instance part="CH1" gate="G$1" x="63.5" y="137.16" rot="R180"/>
-<instance part="CH3" gate="G$1" x="220.98" y="139.7" rot="R180"/>
+<instance part="JP6" gate="G$1" x="111.76" y="55.88" rot="R180"/>
+<instance part="JP2" gate="G$1" x="142.24" y="137.16" rot="R180"/>
+<instance part="JP1" gate="G$1" x="63.5" y="137.16" rot="R180"/>
+<instance part="JP3" gate="G$1" x="220.98" y="139.7" rot="R180"/>
 <instance part="C5" gate="G$1" x="203.2" y="137.16"/>
 <instance part="D1" gate="G$1" x="71.12" y="134.62" rot="R90"/>
 <instance part="D2" gate="G$1" x="149.86" y="134.62" rot="R90"/>
@@ -7934,10 +7936,10 @@ Use formula: I_led = V_thd / R_set
 <instance part="LOGO2" gate="G$1" x="241.3" y="17.78"/>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="V" x="147.32" y="0"/>
-<instance part="JP3" gate="G$1" x="111.76" y="81.28" smashed="yes" rot="R180">
+<instance part="JP4" gate="G$1" x="111.76" y="81.28" smashed="yes" rot="R180">
 <attribute name="NAME" x="114.3" y="75.438" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="JP4" gate="G$1" x="111.76" y="68.58" smashed="yes" rot="R180">
+<instance part="JP5" gate="G$1" x="111.76" y="68.58" smashed="yes" rot="R180">
 <attribute name="NAME" x="114.3" y="62.738" size="1.778" layer="95" rot="R180"/>
 </instance>
 <instance part="FID1" gate="G$1" x="241.3" y="33.02"/>
@@ -7992,12 +7994,12 @@ Use formula: I_led = V_thd / R_set
 <pinref part="GND15" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="G$1" pin="1"/>
+<pinref part="JP6" gate="G$1" pin="1"/>
 <wire x1="104.14" y1="55.88" x2="101.6" y2="55.88" width="0.1524" layer="91"/>
 <label x="101.6" y="55.88" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP4" gate="G$1" pin="2"/>
+<pinref part="JP5" gate="G$1" pin="2"/>
 <wire x1="104.14" y1="66.04" x2="101.6" y2="66.04" width="0.1524" layer="91"/>
 <label x="101.6" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -8075,7 +8077,7 @@ Use formula: I_led = V_thd / R_set
 <junction x="205.74" y="160.02"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="G$1" pin="2"/>
+<pinref part="JP6" gate="G$1" pin="2"/>
 <wire x1="104.14" y1="53.34" x2="101.6" y2="53.34" width="0.1524" layer="91"/>
 <label x="101.6" y="53.34" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -8088,13 +8090,13 @@ Use formula: I_led = V_thd / R_set
 <wire x1="134.62" y1="129.54" x2="124.46" y2="129.54" width="0.1524" layer="91"/>
 <junction x="124.46" y="129.54"/>
 <pinref part="L2" gate="G$1" pin="2"/>
-<pinref part="CH2" gate="G$1" pin="2"/>
+<pinref part="JP2" gate="G$1" pin="2"/>
 <wire x1="134.62" y1="134.62" x2="134.62" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
 <segment>
-<pinref part="CH2" gate="G$1" pin="1"/>
+<pinref part="JP2" gate="G$1" pin="1"/>
 <wire x1="127" y1="142.24" x2="129.54" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="142.24" x2="134.62" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="142.24" x2="134.62" y2="137.16" width="0.1524" layer="91"/>
@@ -8133,13 +8135,13 @@ Use formula: I_led = V_thd / R_set
 <wire x1="55.88" y1="129.54" x2="45.72" y2="129.54" width="0.1524" layer="91"/>
 <junction x="45.72" y="129.54"/>
 <pinref part="L1" gate="G$1" pin="2"/>
-<pinref part="CH1" gate="G$1" pin="2"/>
+<pinref part="JP1" gate="G$1" pin="2"/>
 <wire x1="55.88" y1="134.62" x2="55.88" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
-<pinref part="CH1" gate="G$1" pin="1"/>
+<pinref part="JP1" gate="G$1" pin="1"/>
 <wire x1="48.26" y1="142.24" x2="50.8" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="142.24" x2="55.88" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="142.24" x2="55.88" y2="137.16" width="0.1524" layer="91"/>
@@ -8177,7 +8179,7 @@ Use formula: I_led = V_thd / R_set
 <wire x1="213.36" y1="132.08" x2="203.2" y2="132.08" width="0.1524" layer="91"/>
 <junction x="203.2" y="132.08"/>
 <pinref part="L3" gate="G$1" pin="2"/>
-<pinref part="CH3" gate="G$1" pin="2"/>
+<pinref part="JP3" gate="G$1" pin="2"/>
 <wire x1="213.36" y1="137.16" x2="213.36" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="2"/>
 </segment>
@@ -8201,7 +8203,7 @@ Use formula: I_led = V_thd / R_set
 <label x="15.24" y="157.48" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP4" gate="G$1" pin="1"/>
+<pinref part="JP5" gate="G$1" pin="1"/>
 <wire x1="104.14" y1="68.58" x2="101.6" y2="68.58" width="0.1524" layer="91"/>
 <label x="101.6" y="68.58" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -8213,7 +8215,7 @@ Use formula: I_led = V_thd / R_set
 <label x="93.98" y="157.48" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="G$1" pin="2"/>
+<pinref part="JP4" gate="G$1" pin="2"/>
 <wire x1="104.14" y1="78.74" x2="101.6" y2="78.74" width="0.1524" layer="91"/>
 <label x="101.6" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -8225,7 +8227,7 @@ Use formula: I_led = V_thd / R_set
 <label x="172.72" y="160.02" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="G$1" pin="1"/>
+<pinref part="JP4" gate="G$1" pin="1"/>
 <wire x1="104.14" y1="81.28" x2="101.6" y2="81.28" width="0.1524" layer="91"/>
 <label x="101.6" y="81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -8263,7 +8265,7 @@ Use formula: I_led = V_thd / R_set
 <wire x1="200.66" y1="144.78" x2="203.2" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="1"/>
 <wire x1="203.2" y1="144.78" x2="203.2" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="CH3" gate="G$1" pin="1"/>
+<pinref part="JP3" gate="G$1" pin="1"/>
 <wire x1="208.28" y1="144.78" x2="213.36" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="144.78" x2="213.36" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="1"/>

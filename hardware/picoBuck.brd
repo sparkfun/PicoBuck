@@ -179,13 +179,8 @@
 <text x="15.875" y="23.368" size="0.8128" layer="21" font="vector" ratio="15" rot="SR180" align="bottom-center">IN1</text>
 <text x="20.955" y="23.368" size="0.8128" layer="21" font="vector" ratio="15" rot="SR180" align="bottom-center">IN2</text>
 <text x="23.495" y="23.368" size="0.8128" layer="21" font="vector" ratio="15" rot="SR180" align="bottom-center">IN3</text>
-<text x="20.8153" y="9.8552" size="1.778" layer="22" font="vector" ratio="15" rot="MR0">picoBuck</text>
-<wire x1="0.635" y1="9.525" x2="4.318" y2="9.525" width="0.3048" layer="22" style="shortdash"/>
-<wire x1="4.318" y1="9.525" x2="6.223" y2="12.7" width="0.3048" layer="22" style="shortdash"/>
-<wire x1="6.223" y1="12.7" x2="21.59" y2="12.7" width="0.3048" layer="22" style="shortdash"/>
-<wire x1="21.59" y1="12.7" x2="23.495" y2="9.525" width="0.3048" layer="22" style="shortdash"/>
-<wire x1="23.495" y1="9.525" x2="26.035" y2="9.525" width="0.3048" layer="22" style="shortdash"/>
-<text x="2.794" y="25.273" size="1.778" layer="16" font="vector" ratio="15" rot="MR270">v11</text>
+<text x="13.3223" y="10.9982" size="1.778" layer="22" font="vector" ratio="15" rot="MR0" align="center">picoBuck</text>
+<text x="2.794" y="25.273" size="1.778" layer="16" font="vector" ratio="15" rot="MR270">v12</text>
 <text x="13.335" y="23.368" size="0.8128" layer="21" font="vector" ratio="15" rot="SR180" align="bottom-center">GND</text>
 <wire x1="31.115" y1="3.81" x2="31.115" y2="1.27" width="0.2032" layer="20"/>
 <wire x1="31.115" y1="1.27" x2="29.845" y2="0" width="0.2032" layer="20" curve="-90"/>
@@ -220,6 +215,11 @@
 <text x="1.778" y="21.971" size="0.8128" layer="21" font="vector" ratio="15" rot="R90" align="bottom-center">SJ1</text>
 <text x="10.414" y="21.971" size="0.8128" layer="21" font="vector" ratio="15" rot="R90" align="bottom-center">SJ2</text>
 <text x="19.05" y="21.971" size="0.8128" layer="21" font="vector" ratio="15" rot="R90" align="bottom-center">SJ3</text>
+<text x="13.97" y="22.225" size="1.27" layer="22" font="vector" ratio="15" rot="MR0" align="center">6-36V 3-chan
+330/660mA
+LED Driver</text>
+<dimension x1="-2.54" y1="27.305" x2="28.575" y2="2.54" x3="13.0175" y3="34.29" textsize="1.778" textratio="15" layer="47" dtype="horizontal" unit="inch" precision="4"/>
+<dimension x1="-1.27" y1="2.54" x2="-2.54" y2="27.305" x3="-10.16" y3="14.9225" textsize="1.778" textratio="15" layer="47" dtype="vertical" unit="inch" precision="4"/>
 </plain>
 <libraries>
 <library name="SparkFun">
@@ -828,13 +828,13 @@ We've spent an enormous amount of time creating and checking these footprints an
 <package name="1X02_2.54_SCREWTERM">
 <pad name="P2" x="0" y="0" drill="1.016" shape="square"/>
 <pad name="P1" x="2.54" y="0" drill="1.016" shape="square"/>
-<wire x1="-1.5" y1="3.25" x2="4" y2="3.25" width="0.127" layer="21"/>
-<wire x1="4" y1="3.25" x2="4" y2="2.5" width="0.127" layer="21"/>
-<wire x1="4" y1="2.5" x2="4" y2="-3.25" width="0.127" layer="21"/>
-<wire x1="4" y1="-3.25" x2="-1.5" y2="-3.25" width="0.127" layer="21"/>
-<wire x1="-1.5" y1="-3.25" x2="-1.5" y2="2.5" width="0.127" layer="21"/>
-<wire x1="-1.5" y1="2.5" x2="-1.5" y2="3.25" width="0.127" layer="21"/>
-<wire x1="-1.5" y1="2.5" x2="4" y2="2.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="3.25" x2="4" y2="3.25" width="0.2032" layer="21"/>
+<wire x1="4" y1="3.25" x2="4" y2="2.5" width="0.2032" layer="21"/>
+<wire x1="4" y1="2.5" x2="4" y2="-3.25" width="0.2032" layer="21"/>
+<wire x1="4" y1="-3.25" x2="-1.5" y2="-3.25" width="0.2032" layer="21"/>
+<wire x1="-1.5" y1="-3.25" x2="-1.5" y2="2.5" width="0.2032" layer="21"/>
+<wire x1="-1.5" y1="2.5" x2="-1.5" y2="3.25" width="0.2032" layer="21"/>
+<wire x1="-1.5" y1="2.5" x2="4" y2="2.5" width="0.2032" layer="21"/>
 </package>
 </packages>
 </library>
@@ -1244,7 +1244,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" value="MBRA140" x="19.05" y="17.78" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="LOGO1" library="SparkFun-Aesthetics" package="OSHW-LOGO-S" value="OSHW-LOGOS" x="10.16" y="27.305" rot="MR0"/>
-<element name="LOGO2" library="SparkFun-Aesthetics" package="SFE-NEW-WEBLOGO" value="LOGO-SFENEW" x="23.241" y="3.429" rot="MR0"/>
+<element name="LOGO2" library="SparkFun-Aesthetics" package="SFE-NEW-WEBLOGO" value="LOGO-SFENEW" x="22.606" y="3.937" rot="MR0"/>
 <element name="FRAME1" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="FRAME-LETTER" x="11.43" y="-31.75"/>
 <element name="JP4" library="SparkFun-Connectors" package="1X02_2.54_SCREWTERM" value="M022.54MM_SCREWTERM" x="20.955" y="26.67"/>
 <element name="JP5" library="SparkFun-Connectors" package="1X02_2.54_SCREWTERM" value="M022.54MM_SCREWTERM" x="13.335" y="26.67"/>
@@ -1556,75 +1556,6 @@ design rules under a new name.</description>
 </signal>
 </signals>
 <errors>
-<approved hash="1,20,5ff0758e75395f47"/>
-<approved hash="3,1,1c5a93a4906c1f92"/>
-<approved hash="3,1,21acef6cef952155"/>
-<approved hash="3,1,a45d89a38a68a796"/>
-<approved hash="3,1,bd827e427eb4bd74"/>
-<approved hash="3,1,1d5c43a2406a1e94"/>
-<approved hash="3,1,e3c6868686c5e385"/>
-<approved hash="3,1,f42ecdb1eb8d12ee"/>
-<approved hash="1,20,dc74020a7d19a367"/>
-<approved hash="3,16,4824e9e496f83738"/>
-<approved hash="3,16,05ea0bd98403012c"/>
-<approved hash="3,16,f46e56ae558ef74e"/>
-<approved hash="3,16,04860148a08aa041"/>
-<approved hash="3,16,747fd2bfd26274a2"/>
-<approved hash="3,16,e3ed6beca5a06160"/>
-<approved hash="3,16,e45c059c05dee41e"/>
-<approved hash="3,16,730ef42cf0810acc"/>
-<approved hash="3,16,fe12d9d2d990fe50"/>
-<approved hash="3,16,c99dc19d465c459b"/>
-<approved hash="3,16,4a6f7caf7c8c4a4c"/>
-<approved hash="3,16,12f8962b07e80544"/>
-<approved hash="3,16,f845db05db30f870"/>
-<approved hash="3,1,e3c70c870cc5e385"/>
-<approved hash="3,1,fc2f41b1ef8e16ee"/>
-<approved hash="1,20,c4778e09f115bb6b"/>
-<approved hash="3,16,1040af80d0126fd2"/>
-<approved hash="3,16,619b9fc7dd039cd9"/>
-<approved hash="3,16,491db7ddb70349c3"/>
-<approved hash="3,16,04f71e48ab8c28b8"/>
-<approved hash="3,16,ec35ddf5ddeeec2e"/>
-<approved hash="3,16,2c8daa33987f864f"/>
-<approved hash="3,16,75f65736577575b5"/>
-<approved hash="3,16,0feff0cef18cf0c1"/>
-<approved hash="3,16,bd6f582f587fbd3f"/>
-<approved hash="3,16,2178e1f9233da342"/>
-<approved hash="3,16,09fa9c3a9c1609d6"/>
-<approved hash="3,16,70faf6f630b63183"/>
-<approved hash="3,16,8058171817e980a9"/>
-<approved hash="3,1,2b65e625e6e52ba5"/>
-<approved hash="3,1,90cfafd2a293dd8f"/>
-<approved hash="1,20,97f61908661be8e5"/>
-<approved hash="3,16,d329fa698574ac34"/>
-<approved hash="3,16,5b44aa58dc8261c6"/>
-<approved hash="3,16,c9067e460124b664"/>
-<approved hash="3,16,d82b992eee21616d"/>
-<approved hash="3,16,90513a113ac09080"/>
-<approved hash="3,1,45ace76ce7944554"/>
-<approved hash="2,20,232a4a03d12fb839"/>
-<approved hash="2,20,26ad4965d245bdb2"/>
-<approved hash="2,20,df414acdd1c54476"/>
-<approved hash="2,20,21a74b05d1cdbb50"/>
-<approved hash="2,20,dd1e4a23d1cf46cd"/>
-<approved hash="2,20,2e7c4a27d1cbb5af"/>
-<approved hash="2,20,d8104a4fd1434323"/>
-<approved hash="2,20,db9b4b4dd1ad4144"/>
-<approved hash="2,20,cb6baa42efd730bf"/>
-<approved hash="2,20,c8ecab24eebb3332"/>
-<approved hash="2,20,c03daa66ef373b2d"/>
-<approved hash="2,20,cde6a944ef3335d0"/>
-<approved hash="2,20,c2b8ab5cef0b38ae"/>
-<approved hash="2,20,c537aa42ef2f3e1b"/>
-<approved hash="2,20,3a3655beef2f3ee6"/>
-<approved hash="2,20,38ad55bcef333c63"/>
-<approved hash="5,16,f10bdb6ff020f302"/>
-<approved hash="5,16,fa0bc3aeebf31062"/>
-<approved hash="5,16,860ef7a359f08a61"/>
-<approved hash="5,16,c108339036217903"/>
-<approved hash="5,16,8abd3ad2615c7d80"/>
-<approved hash="5,16,5b5cdb18e061c4d6"/>
 <approved hash="1,20,5e7e740074275e59"/>
 <approved hash="3,1,1b2194df943a1bc4"/>
 <approved hash="3,1,2010eed0ee9d205d"/>
@@ -1691,4 +1622,10 @@ design rules under a new name.</description>
 </errors>
 </board>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>

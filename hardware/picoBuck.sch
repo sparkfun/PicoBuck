@@ -6276,13 +6276,13 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <package name="1X02_2.54_SCREWTERM">
 <pad name="P2" x="0" y="0" drill="1.016" shape="square"/>
 <pad name="P1" x="2.54" y="0" drill="1.016" shape="square"/>
-<wire x1="-1.5" y1="3.25" x2="4" y2="3.25" width="0.127" layer="21"/>
-<wire x1="4" y1="3.25" x2="4" y2="2.5" width="0.127" layer="21"/>
-<wire x1="4" y1="2.5" x2="4" y2="-3.25" width="0.127" layer="21"/>
-<wire x1="4" y1="-3.25" x2="-1.5" y2="-3.25" width="0.127" layer="21"/>
-<wire x1="-1.5" y1="-3.25" x2="-1.5" y2="2.5" width="0.127" layer="21"/>
-<wire x1="-1.5" y1="2.5" x2="-1.5" y2="3.25" width="0.127" layer="21"/>
-<wire x1="-1.5" y1="2.5" x2="4" y2="2.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="3.25" x2="4" y2="3.25" width="0.2032" layer="21"/>
+<wire x1="4" y1="3.25" x2="4" y2="2.5" width="0.2032" layer="21"/>
+<wire x1="4" y1="2.5" x2="4" y2="-3.25" width="0.2032" layer="21"/>
+<wire x1="4" y1="-3.25" x2="-1.5" y2="-3.25" width="0.2032" layer="21"/>
+<wire x1="-1.5" y1="-3.25" x2="-1.5" y2="2.5" width="0.2032" layer="21"/>
+<wire x1="-1.5" y1="2.5" x2="-1.5" y2="3.25" width="0.2032" layer="21"/>
+<wire x1="-1.5" y1="2.5" x2="4" y2="2.5" width="0.2032" layer="21"/>
 </package>
 <package name="SCREWTERMINAL-3.5MM-2">
 <circle x="2" y="3" radius="0.2828" width="0.127" layer="51"/>
@@ -7883,13 +7883,16 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <sheet>
 <plain>
 <text x="15.24" y="71.12" size="1.778" layer="94">Current Sense Resistors R1, R2, R3
-  - 350mA  =&gt;  0.3 Ohms
+  - 330mA  =&gt;  0.3 Ohms
+
+R1 || R4, R2 || R5, R3 || R6
+ - 660mA =&gt; 0.15 Ohms
 
 Use formula: I_led = V_thd / R_set
    V_thd = 0.1
 
 6V &lt; VIN &lt; 36V</text>
-<text x="238.506" y="6.604" size="3.81" layer="91">11</text>
+<text x="238.506" y="6.604" size="3.81" layer="91">12</text>
 <text x="153.924" y="6.35" size="3.81" layer="91">Ethan Zonca/Mike Hord</text>
 <text x="53.34" y="162.56" size="1.778" layer="97">Close SJ1, SJ2, SJ3 to increase
 driver current to 670mA.</text>

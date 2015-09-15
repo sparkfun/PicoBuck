@@ -7878,6 +7878,8 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <part name="R6" library="SparkFun-Resistors" deviceset="0.3OHM-1/8W-1%(0805)" device="" value="0.3"/>
 <part name="STANDOFF1" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device=""/>
 <part name="STANDOFF2" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device=""/>
+<part name="GND2" library="SparkFun" deviceset="GND" device=""/>
+<part name="GND3" library="SparkFun" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7961,6 +7963,8 @@ driver current to 670mA.</text>
 <instance part="R6" gate="G$1" x="215.9" y="149.86"/>
 <instance part="STANDOFF1" gate="G$1" x="236.22" y="27.94"/>
 <instance part="STANDOFF2" gate="G$1" x="236.22" y="33.02"/>
+<instance part="GND2" gate="1" x="93.98" y="48.26"/>
+<instance part="GND3" gate="1" x="101.6" y="60.96"/>
 </instances>
 <busses>
 </busses>
@@ -7997,14 +8001,16 @@ driver current to 670mA.</text>
 <pinref part="GND15" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="JP6" gate="G$1" pin="1"/>
-<wire x1="104.14" y1="55.88" x2="101.6" y2="55.88" width="0.1524" layer="91"/>
-<label x="101.6" y="55.88" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="JP5" gate="G$1" pin="2"/>
 <wire x1="104.14" y1="66.04" x2="101.6" y2="66.04" width="0.1524" layer="91"/>
-<label x="101.6" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="GND3" gate="1" pin="GND"/>
+<wire x1="101.6" y1="63.5" x2="101.6" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="JP6" gate="G$1" pin="1"/>
+<wire x1="104.14" y1="55.88" x2="93.98" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="GND2" gate="1" pin="GND"/>
+<wire x1="93.98" y1="50.8" x2="93.98" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VIN" class="0">

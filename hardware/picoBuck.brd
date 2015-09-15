@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -165,13 +165,13 @@
 <wire x1="24.7525" y1="29.835" x2="-3.81" y2="29.835" width="0.2032" layer="20"/>
 <wire x1="-3.81" y1="29.835" x2="-5.08" y2="28.565" width="0.2032" layer="20" curve="90"/>
 <text x="2.7305" y="6.35" size="0.8128" layer="21" font="vector" ratio="15">OUT1</text>
-<text x="11.7475" y="6.35" size="0.8128" layer="21" font="vector" ratio="15">OUT2</text>
+<text x="11.3665" y="6.35" size="0.8128" layer="21" font="vector" ratio="15">OUT2</text>
 <text x="20.0025" y="6.35" size="0.8128" layer="21" font="vector" ratio="15">OUT3</text>
 <text x="1.4605" y="6.19125" size="1.27" layer="21" font="vector" ratio="15">+</text>
 <text x="5.9055" y="6.35" size="1.27" layer="21" font="vector" ratio="15">-</text>
-<text x="10.4775" y="6.19125" size="1.27" layer="21" font="vector" ratio="15">+</text>
+<text x="10.0965" y="6.19125" size="1.27" layer="21" font="vector" ratio="15">+</text>
 <text x="18.7325" y="6.19125" size="1.27" layer="21" font="vector" ratio="15">+</text>
-<text x="15.1765" y="6.19125" size="1.27" layer="21" font="vector" ratio="15">-</text>
+<text x="14.6685" y="6.19125" size="1.27" layer="21" font="vector" ratio="15">-</text>
 <text x="23.1775" y="6.19125" size="1.27" layer="21" font="vector" ratio="15">-</text>
 <text x="4.318" y="23.749" size="0.8128" layer="21" font="vector" ratio="15" rot="SR180" align="bottom-center">VIN</text>
 <text x="2.12725" y="23.78075" size="1.27" layer="21" font="vector" ratio="15" rot="SR180" align="bottom-center">+</text>

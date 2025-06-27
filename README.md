@@ -1,7 +1,7 @@
 PicoBuck LED Driver
 ===================
 
-[![PicoBuck](https://dlnmh9ip6v2uc.cloudfront.net/images/products/1/1/8/5/0/11850-01_medium.jpg)  
+[![PicoBuck](https://cdn.sparkfun.com/assets/parts/8/2/2/9/11850-01.jpg)  
 *PicoBuck LED Driver (COM-11850)*](https://www.sparkfun.com/products/11850)
 
 This breakout board allows you to control and blend 3 different LEDs on 3 different channels. 
